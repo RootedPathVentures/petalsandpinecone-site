@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About | Petals & Pinecone Studio</title>
-<meta name="description" content="The story behind Petals & Pinecone Studio — a creative mom, a Texas homestead, and a studio built a new way.">
+<title>Contact | Petals & Pinecone Studio</title>
+<meta name="description" content="Questions, custom orders, wholesale, or just to say hello — get in touch with Petals & Pinecone Studio.">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
@@ -73,24 +73,58 @@
 </header>
 <main>
 <div class="container">
-  <div class="page-hero"><div class="kicker">The Studio</div><h1>Hi, I'm Mandie.</h1></div>
-  <section style="padding-top:20px">
-    <div class="about-grid">
-      <div class="logo-side"><img src="assets/img/logo-stacked.png" alt="Petals &amp; Pinecone Studio logo"></div>
-      <div class="about-copy">
-        <p>Petals &amp; Pinecone Studio started with a simple love: creating. I've always been a maker at heart — if I'm not designing something, I'm dreaming about the next thing I want to design. Digital art gave that creativity a home, and this studio gave it a name.</p>
-        <p>For years I was a busy corporate working mom. In my last role as a Chief of Staff, the part I loved most was visual storytelling — taking something complicated and making it clear, and beautiful. And like so many busy moms, I bought plenty of Etsy templates myself, even ones I could have designed, because in some seasons saving an hour matters more than doing it all yourself. I never forgot how much those little timesavers meant.</p>
-        <p>In 2024 I stepped away from the workforce to give my kids the attention they needed. Around the same time, I got fascinated by AI — and realized I could finally build the company I'd been imagining: a small studio run from our Texas homestead, just me, my sketchbook, and a team of very tireless virtual assistants.</p>
-        <p>I'm a Christian and a homesteader, and I create for women like me — faith-filled homes, simple living, and things that are lovely without ever being preachy. Nothing distressed, nothing dated: just beautiful things that point gently toward a good God.</p>
-        <span class="script">Rooted in Beauty. Inspired by Grace.</span>
-        <div class="btn-row" style="margin-top:20px">
-          <a class="btn solid" href="https://www.etsy.com/shop/PetalsandPinecone" target="_blank" rel="noopener">Visit the Etsy Shop</a>
-          <a class="btn ghost" href="contact.html">Say Hello</a>
+  <div class="page-hero"><div class="kicker">Say Hello</div><h1>Contact Us</h1>
+  <p class="sub">Questions about an order, a custom idea, wholesale, or just want to say hi? I'd love to hear from you — I read every note.</p></div>
+  <section style="padding-top:28px">
+    <div class="contact-grid">
+      <div>
+        <form action="https://formsubmit.co/petalsandpineconestudio@outlook.com" method="POST">
+          <input type="hidden" name="_subject" value="New message from petalsandpineconestudio.com">
+          <input type="hidden" name="_next" value="https://petalsandpineconestudio.com/contact.html?sent=1">
+          <div class="field"><label for="name">Name</label><input type="text" id="name" name="name" required></div>
+          <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" required></div>
+          <div class="field"><label for="topic">What's this about?</label>
+            <select id="topic" name="topic">
+              <option>General question</option>
+              <option>Order help</option>
+              <option>Custom order idea</option>
+              <option>Wholesale</option>
+              <option>Collaboration</option>
+              <option>Just saying hello</option>
+            </select>
+          </div>
+          <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="6" required></textarea></div>
+          <div class="field check" id="newsletter">
+            <input type="checkbox" id="news" name="newsletter" value="yes">
+            <label for="news" style="text-transform:none;letter-spacing:0;font-size:15px;margin:0">Add me to the Petals &amp; Pinecone letter — new collections, seasonal releases, and a little encouragement. Never spam, ever.</label>
+          </div>
+          <button class="btn solid" type="submit">Send Message</button>
+          <p id="sent-note" style="display:none;margin-top:14px;color:#5d574f">Thank you! Your note is on its way. 💌</p>
+        </form>
+      </div>
+      <div>
+        <div class="info-card">
+          <h3>Find the shop</h3>
+          <p>Prints, tees &amp; templates live on <a href="https://www.etsy.com/shop/PetalsandPinecone" target="_blank" rel="noopener" style="text-decoration:underline">Etsy</a>.<br>
+          Journals &amp; notebooks are on <a href="https://www.amazon.com/dp/B0H39MZCLY" target="_blank" rel="noopener" style="text-decoration:underline">Amazon</a>.</p>
+        </div>
+        <div class="info-card">
+          <h3>Order questions</h3>
+          <p>For fastest help with an Etsy order, message the shop directly through Etsy — or use the form and include your order number.</p>
+        </div>
+        <div class="info-card">
+          <h3>The newsletter</h3>
+          <p>Check the box on the form and you're in. New collections, seasonal freebies, and launch news — a note or two a month, never spam.</p>
         </div>
       </div>
     </div>
   </section>
-</div></main>
+</div>
+<script>
+if (new URLSearchParams(location.search).get('sent')) {
+  var n = document.getElementById('sent-note'); if (n) n.style.display = 'block';
+}
+</script></main>
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
