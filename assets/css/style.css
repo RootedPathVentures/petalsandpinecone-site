@@ -256,6 +256,9 @@ section { padding: 56px 0; }
 .card:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(62,58,54,.12); }
 .card .card-img { aspect-ratio: 1/1; overflow: hidden; background: var(--warm-cream); position: relative; }
 .card .card-img img { width: 100%; height: 100%; object-fit: cover; }
+/* Books/notebooks are 8.5x11 portrait — show the whole cover, never crop the border art */
+.card.book .card-img { aspect-ratio: 4/5; display: flex; align-items: center; justify-content: center; padding: 14px; }
+.card.book .card-img img { width: auto; height: 100%; max-width: 100%; object-fit: contain; box-shadow: 0 3px 10px rgba(62,58,54,.14); }
 .card .badge {
   position: absolute;
   top: 12px; left: 12px;
